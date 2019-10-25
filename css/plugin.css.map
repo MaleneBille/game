@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,2LAA4L;EACxL,gBAAgB,EAAE,OAAO",
+"sources": ["../sass/plugin.scss"],
+"names": [],
+"file": "plugin.css"
+}

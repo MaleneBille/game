@@ -1,0 +1,17 @@
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button, #add_payment_method .wc-proceed-to-checkout a.checkout-button {
+    background-color: $btn-color-2;
+    &:hover {
+        background-color: rgba($btn-color-2, 0.5);
+    }
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+    background-color: $btn-color-2;
+    &:hover {
+        background-color: rgba($btn-color-2, 0.5);
+    }
+}
+
+.woocommerce a.remove:hover {
+    background-color: rgba($btn-color, 0.5);
+}

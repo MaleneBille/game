@@ -1,0 +1,87 @@
+body {
+    background-color: $primary-color; 
+    @include textFont;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+    .section {
+        position: relative;
+        padding-top: $header-height;
+        min-height: 100vh;
+        background-color: $secondary-color;
+        color: $text-color-2;
+        &:nth-child(odd) {
+            background-color: $primary-color;
+            color: $text-color;
+        }
+
+        &--hero {
+            display: flex;
+            background-image: url("https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-position: center;
+            background-size: cover;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($btn-color, 0.5);
+            }
+        }   
+
+        &__text {
+            p {
+                line-height: 1.5; 
+            }
+            a {
+                background-color: $text-color;
+                padding: 10px;
+                text-decoration: none;
+                color: $text-color-2;
+                &:hover {
+                    background-color: rgba($btn-color, 0.5);
+                }
+            }
+        }
+
+        &__promoted-text {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            color: $text-color-2;
+            @include promotedText;
+            /*&:hover{
+                
+            }*/
+        }
+        
+        &__header {
+            display: flex;
+            justify-content: center;
+            h2 {
+                margin-top: 0;
+            }
+        }
+
+        .post-thumbnail {
+            display: flex;
+            justify-content: center;
+            height: 250px;
+            opacity: 0.5;
+            img {
+                height: inherit;
+                width: inherit;
+                transition: all 0.5s ease;
+                // &:hover {
+                //     transform: scale(1.2);
+                //     transition: 0.5s ease;
+                // }
+            }
+        }
+    }
